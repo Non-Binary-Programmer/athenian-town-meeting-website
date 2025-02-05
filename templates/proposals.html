@@ -3,19 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Athenian Town Meeting</title>
-    <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='proposals.css') }}" rel="stylesheet" />
 </head>
 <body>
-    <div id="top">
-        <h1>Athenian Town Meeting</h1>
-    </div>
     <div id = "navigation">
         <a href="/">Home</a> <a href="/proposals">Proposals</a> <a href="/proposals/edit">Edit</a> <a href="/proposals/create">Create</a>
     </div>
     <div id = "proposals">
-        <h2>
-            <a href = "/proposals">Active Proposals</a>
-        </h2>
         <table id = "proposalTable">
             <tr>
                 <th>Title</th>
@@ -30,6 +24,13 @@
                 <td>Oliver Abola</td>
                 <td>Roark Greenman</td>
                 <td>Voted on, pending tally</td>
+            </tr>
+            <tr>
+                <td>Feminine Hygine Products</td>
+                <td><a>Link</a></td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>Fast-forwarded by admin</td>
             </tr>
         </table>
         <a href = "/proposals/create">Submit a new proposal!</a>
